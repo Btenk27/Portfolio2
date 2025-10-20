@@ -1,35 +1,58 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="scroll-smooth transition-colors duration-700 ease-in-out">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact | Zhidan Frizky Pradana</title>
-  <link rel="stylesheet" href="src/output.css" />
-</head>
-<body class="antialiased text-slate-800 bg-gradient-to-b from-slate-50 via-white to-teal-50">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Zhidan Frizky Pradana</title>
+    <link rel="stylesheet" href="src/output.css" />
+  </head>
+  <body class="antialiased text-slate-800 bg-gradient-to-b from-slate-50 via-white to-teal-50">
+    <!-- HEADER -->
+    <header
+      class="reveal bg-gradient-to-r from-white via-slate-50 to-teal-50 shadow-sm sticky top-0 z-50 backdrop-blur"
+    >
+      <div class="max-w-6xl mx-auto px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <a href="home.html" class="font-semibold hover:text-teal-600">Zhidan Frizky Pradana</a>
+          <nav class="hidden md:flex items-center gap-6 text-sm">
+            <a href="home.html" class="hover:text-teal-600 font-semibold">Home</a>
+            <a href="projects.html" class="hover:text-teal-600 font-semibold">Projects</a>
+            <a href="contact.html" class="text-teal-600 font-semibold">Contact</a>
+            <button
+              id="dark-toggle"
+              class="ml-4 w-8 h-8 flex items-center justify-center rounded-md border border-slate-300 hover:border-teal-600 transition"
+            >
+              <svg
+                id="icon-sun"
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 text-yellow-500"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 3v1m0 16v1m8.66-9H21m-18 0H3m15.364 6.364l-.707.707M6.343 6.343l-.707.707m12.728 0l-.707-.707M6.343 17.657l-.707-.707M12 8a4 4 0 100 8 4 4 0 000-8z"
+                />
+              </svg>
+              <svg
+                id="icon-moon"
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 text-slate-400 hidden"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z" />
+              </svg>
+            </button>
+          </nav>
 
-  <!-- HEADER -->
-  <header class="reveal bg-gradient-to-r from-white via-slate-50 to-teal-50 shadow-sm sticky top-0 z-50 backdrop-blur">
-    <div class="max-w-6xl mx-auto px-6 lg:px-8">
-      <div class="flex items-center justify-between h-16">
-        <a href="home.html" class="font-semibold hover:text-teal-600">Zhidan Frizky Pradana</a>
-        <nav class="hidden md:flex items-center gap-6 text-sm">
-          <a href="home.html" class="hover:text-teal-600 font-semibold">Home</a>
-          <a href="projects.html" class="hover:text-teal-600 font-semibold">Projects</a>
-          <a href="contact.html" class="text-teal-600 font-semibold">Contact</a>
-          <button id="dark-toggle" class="ml-4 w-8 h-8 flex items-center justify-center rounded-md border border-slate-300 hover:border-teal-600 transition">
-            <svg id="icon-sun" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M12 3v1m0 16v1m8.66-9H21m-18 0H3m15.364 6.364l-.707.707M6.343 6.343l-.707.707m12.728 0l-.707-.707M6.343 17.657l-.707-.707M12 8a4 4 0 100 8 4 4 0 000-8z"/>
-            </svg>
-            <svg id="icon-moon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 hidden" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z"/>
-            </svg>
-          </button>
-        </nav>
-
-       <button id="btn-mobile" 
-            class="md:hidden flex flex-col justify-between w-4 h-4 space-y-[5px] cursor-pointer relative z-50 ">
+          <button
+            id="btn-mobile"
+            class="md:hidden flex flex-col justify-between w-4 h-4 space-y-[5px] cursor-pointer relative z-50"
+          >
             <span class="block w-6 h-[2px] bg-slate-800 rounded"></span>
             <span class="block w-6 h-[2px] bg-slate-800 rounded"></span>
             <span class="block w-6 h-[2px] bg-slate-800 rounded"></span>
@@ -37,73 +60,141 @@
         </div>
       </div>
 
-      <div id="mobile-menu"
-        class="hidden md:hidden border-t overflow-hidden opacity-0 max-h-0 transform scale-y-95 transition-all duration-500 ease-in-out origin-top">
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden border-t overflow-hidden opacity-0 max-h-0 transform scale-y-95 transition-all duration-500 ease-in-out origin-top"
+      >
         <div class="px-6 py-4 flex flex-col gap-3">
-        <a href="home.html" class="hover:text-teal-600">Home</a>
-        <a href="projects.html" class="hover:text-teal-600">Projects</a>
-        <a href="contact.html" class="hover:text-teal-600">Contact</a>
-        <button id="dark-toggle-mobile" class="ml-4 w-8 h-8 flex items-center justify-center rounded-md border border-slate-300 hover:border-teal-600 transition">
-          <svg id="icon-sun-mobile" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M12 3v1m0 16v1m8.66-9H21m-18 0H3m15.364 6.364l-.707.707M6.343 6.343l-.707.707m12.728 0l-.707-.707M6.343 17.657l-.707-.707M12 8a4 4 0 100 8 4 4 0 000-8z"/>
-          </svg>
-          <svg id="icon-moon-mobile" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 hidden" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z"/>
-          </svg>
-        </button>
+          <a href="home.html" class="hover:text-teal-600">Home</a>
+          <a href="projects.html" class="hover:text-teal-600">Projects</a>
+          <a href="contact.html" class="hover:text-teal-600">Contact</a>
+          <button
+            id="dark-toggle-mobile"
+            class="ml-4 w-8 h-8 flex items-center justify-center rounded-md border border-slate-300 hover:border-teal-600 transition"
+          >
+            <svg
+              id="icon-sun-mobile"
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 text-yellow-500"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 3v1m0 16v1m8.66-9H21m-18 0H3m15.364 6.364l-.707.707M6.343 6.343l-.707.707m12.728 0l-.707-.707M6.343 17.657l-.707-.707M12 8a4 4 0 100 8 4 4 0 000-8z"
+              />
+            </svg>
+            <svg
+              id="icon-moon-mobile"
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 text-slate-400 hidden"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z" />
+            </svg>
+          </button>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <!-- CONTACT -->
-  <section id="contact" class="reveal py-20 bg-gradient-to-b from-teal-50 via-white to-teal-50">
-    <div class="max-w-3xl mx-auto px-6">
-      <h2 class="text-2xl font-semibold">Contact Me</h2>
-      <p class="mt-2 text-slate-600">
-        Have a project idea, collaboration offer, or just want to say hi?  
-        You can reach me directly via email at  
-        <a href="mailto:zhidanfrizky@gmail.com" class="underline text-teal-600 hover:text-teal-700">zhidanfrizky@gmail.com</a>.
-      </p>
+    <main>
+      <!-- CONTACT -->
+      <section id="contact" class="reveal py-20 bg-gradient-to-b from-teal-50 via-white to-teal-50">
+        <div class="max-w-3xl mx-auto px-6">
+          <h2 class="text-2xl font-semibold">Contact Me</h2>
+          <p class="mt-2 text-slate-600">
+            Have a project idea, collaboration offer, or just want to say hi? You can reach me
+            directly via email at
+            <a
+              href="mailto:zhidanfrizky@gmail.com"
+              class="underline text-teal-600 hover:text-teal-700"
+            >
+              zhidanfrizky@gmail.com
+            </a>
+            .
+          </p>
 
-      <!-- CONTACT FORM -->
-      <form class="mt-6 grid gap-4" onsubmit="event.preventDefault(); alert('Message sent (demo)')">
-        <input type="text" placeholder="Name" class="p-3 rounded-md border text-teal-600" />
-        <input type="email" placeholder="Email" class="p-3 rounded-md border text-teal-600" />
-        <input type="text" placeholder="Subject" class="p-3 rounded-md border text-teal-600" />
-        <textarea rows="5" placeholder="Your message..." class="p-3 rounded-md border text-teal-600"></textarea>
-        <div class="flex gap-3">
-          <button type="submit" class="px-4 py-2 bg-teal-600 text-white rounded-md hover:shadow-md hover:-translate-y-1 transition">Send Message</button>
-          <button type="reset" class="px-4 py-2 border rounded-md hover:shadow-md hover:-translate-y-1 transition">Reset</button>
-        </div>
-      </form>
-      <br>
+          <!-- CONTACT FORM -->
+          <form
+            class="mt-6 grid gap-4"
+            onsubmit="event.preventDefault(); alert('Message sent (demo)')"
+          >
+            <input type="text" placeholder="Name" class="p-3 rounded-md border text-teal-600" />
+            <input type="email" placeholder="Email" class="p-3 rounded-md border text-teal-600" />
+            <input type="text" placeholder="Subject" class="p-3 rounded-md border text-teal-600" />
+            <textarea
+              rows="5"
+              placeholder="Your message..."
+              class="p-3 rounded-md border text-teal-600"
+            ></textarea>
+            <div class="flex gap-3">
+              <button
+                type="submit"
+                class="px-4 py-2 bg-teal-600 text-white rounded-md hover:shadow-md hover:-translate-y-1 transition"
+              >
+                Send Message
+              </button>
+              <button
+                type="reset"
+                class="px-4 py-2 border rounded-md hover:shadow-md hover:-translate-y-1 transition"
+              >
+                Reset
+              </button>
+            </div>
+          </form>
+          <br />
 
-      <!-- CONTACT INFO CARDS -->
-      <div class="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
-        <div class="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition transform hover:-translate-y-1">
-          <h3 class="font-semibold text-teal-600">My Location</h3>
-          <p class="mt-2 text-slate-600 text-sm">Surabaya, East Java, Indonesia</p>
-        </div>
-        <div class="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition transform hover:-translate-y-1">
-          <h3 class="font-semibold text-teal-600">ConsCode</h3>
-          <div class="mt-2 flex justify-center gap-3 text-sm text-teal-600">
-            <a href="https://api.whatsapp.com/send/?phone=85189339423&text&type=phone_number&app_absent=0" target="_blank" class="hover:underline">WhatsApp</a>
-            <a href="https://x.com/conscod33/" target="_blank" class="hover:underline">Twitter</a>
+          <!-- CONTACT INFO CARDS -->
+          <div class="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
+            <div
+              class="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition transform hover:-translate-y-1"
+            >
+              <h3 class="font-semibold text-teal-600">My Location</h3>
+              <p class="mt-2 text-slate-600 text-sm">Surabaya, East Java, Indonesia</p>
+            </div>
+            <div
+              class="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition transform hover:-translate-y-1"
+            >
+              <h3 class="font-semibold text-teal-600">ConsCode</h3>
+              <div class="mt-2 flex justify-center gap-3 text-sm text-teal-600">
+                <a
+                  href="https://api.whatsapp.com/send/?phone=85189339423&text&type=phone_number&app_absent=0"
+                  target="_blank"
+                  class="hover:underline"
+                >
+                  WhatsApp
+                </a>
+                <a href="https://x.com/conscod33/" target="_blank" class="hover:underline">
+                  Twitter
+                </a>
+              </div>
+            </div>
           </div>
         </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="py-10 bg-gradient-to-r from-teal-50 via-white to-slate-50 border-t">
+      <div class="flex justify-center gap-6 text-slate-600">
+        <a
+          href="https://www.linkedin.com/in/zhidan-frizky"
+          target="_blank"
+          class="hover:text-teal-600"
+        >
+          LinkedIn
+        </a>
+        <a href="https://github.com/Btenk27" target="_blank" class="hover:text-teal-600">GitHub</a>
+        <a href="https://www.instagram.com/zhidan.f.p/" target="_blank" class="hover:text-teal-600">
+          Instagram
+        </a>
       </div>
-  </section>
+    </footer>
 
-  <!-- FOOTER -->
-  <footer class="py-10 bg-gradient-to-r from-teal-50 via-white to-slate-50 border-t">
-    <div class="flex justify-center gap-6 text-slate-600">
-      <a href="https://www.linkedin.com/in/zhidan-frizky" target="_blank" class="hover:text-teal-600">LinkedIn</a>
-      <a href="https://github.com/Btenk27" target="_blank" class="hover:text-teal-600">GitHub</a>
-      <a href="https://www.instagram.com/zhidan.f.p/" target="_blank" class="hover:text-teal-600">Instagram</a>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
