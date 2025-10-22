@@ -14,4 +14,4 @@ Web ini juga memiliki tampilan dark mode dan juga light mode
 (HOME 2) light mode
 
 # Link Youtube
-https://youtu.be/laxhBRdv2v8 ini adalah link Youtube untuk presentasi web yang saya buat
+https://youtu.be/wffgBXF4eNw ini adalah link Youtube untuk presentasi web yang saya buat
