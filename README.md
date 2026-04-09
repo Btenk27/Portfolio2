@@ -12,6 +12,3 @@ Web ini juga memiliki tampilan dark mode dan juga light mode
 <img width="1919" height="1079" alt="Screenshot 2025-10-20 043456" src="https://github.com/user-attachments/assets/637d7b2f-67a1-4bfb-99f0-9b03279f1304" />
 <img width="706" height="1078" alt="Screenshot 2025-10-20 043627" src="https://github.com/user-attachments/assets/711734cf-c1f1-4be7-bffe-c578a34b35db" />
 (HOME 2) light mode
-
-# Link Youtube
-https://youtu.be/se5bidp7H00 ini adalah link Youtube untuk presentasi web yang saya buat
